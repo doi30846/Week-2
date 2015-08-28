@@ -5,7 +5,7 @@ namespace Lab201
 	class MainClass
 	{
 		public static void Main (string[] args)
-		{
+		{ 
 			/* Testing the Student class */
 			Student[] stds = new Student[7];
 			stds[0] = new Student ();
