@@ -21,10 +21,20 @@ namespace Lab201
 				Console.WriteLine (s);
 
 			Console.WriteLine ("\n--- Playing with s4, s5, s6 objects ---");
+
 			stds [4].Name = "Mario";
 			stds [5].YearOfBirth = 1900;
 			stds [6].isActive = false;
-			for (int i = 4; i < stds.Length; i++)
+
+
+            for (int i = 4; i < stds.Length; i++)
+                if (stds[i].YearOfBirth >= 2050 || stds[i].YearOfBirth <= 1950)
+            {
+                Console.WriteLine(stds[i].StudentID + ": error try setting invalid year - of - birth value!");
+                    stds[i].Age=20;
+            }
+
+            for (int i = 4; i < stds.Length; i++)
 				Console.WriteLine (stds [i]);
 
             Console.ReadLine();
