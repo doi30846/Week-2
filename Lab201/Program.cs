@@ -38,6 +38,7 @@ namespace Lab201
 				Console.WriteLine (stds [i]);
 
             Console.ReadLine();
+            Console.ReadLine();
 		}
 	}
 }
